@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body class="mainBackground">
+      <div *ngFor="let currentArea of things | keyvalue; let i = index">
+        <div class="zones">Zona {{ i + 1 }}</div>
+        <div class="row row-cols-auto">
+            <div class="col-1" id="sku" *ngFor="let data of currentArea.value">
+              <div id="defaultSku">{{ data.defaultSku }}</div>
+              {{ data.sku }}
+            </div>
+        </div>
+      </div>
+  </body>
+</html>
