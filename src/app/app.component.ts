@@ -1,6 +1,4 @@
-import { Template } from '@angular/compiler/src/render3/r3_ast';
 import { Component, OnInit } from '@angular/core';
-import { groupBy } from 'rxjs/internal/operators/groupBy';
 import jsonData from '../assets/things.json';
 
 @Component({
